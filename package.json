@@ -37,7 +37,8 @@
     "@sentry/integrations": "^5.6.1",
     "@sentry/types": "^5.6.1",
     "@sentry/utils": "^5.6.1",
-    "@sentry/wizard": "^1.0.0"
+    "@sentry/wizard": "^1.0.0",
+    "promise": "^7.3.1"
   },
   "devDependencies": {
     "@sentry/typescript": "5.*",
