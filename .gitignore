@@ -1,3 +1,5 @@
+ios/Sentry/
+
 # Node
 node_modules
 *.log
