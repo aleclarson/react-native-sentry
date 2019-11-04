@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "@sentry/typescript": "5.*",
+    "indo": "^0.3.14",
     "prettier": "^1.17.0",
     "react-native": "npm:@alloc/react-native-macos@^0.20.0",
     "replace-in-file": "^4.0.0",
