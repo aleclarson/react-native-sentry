@@ -22,9 +22,6 @@
   ],
   "author": "Sentry",
   "license": "MIT",
-  "peerDependencies": {
-    "react-native": ">=0.56.0"
-  },
   "dependencies": {
     "@sentry/wizard": "^0.13.0",
     "promise": "^7.3.1",
@@ -47,7 +44,7 @@
   "devDependencies": {
     "meta": "^2.2.4",
     "prettier": "^1.12.1",
-    "react-native-macos": "^0.19.0",
+    "react-native": "npm:@alloc/react-native-macos@^0.20.0",
     "replace-in-file": "^3.4.0",
     "typescript": "^2.8.3"
   }
