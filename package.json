@@ -53,6 +53,7 @@
     "eslint": "^7.6.0",
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-native": "^3.8.1",
+    "indo": "^0.3.14",
     "jest": "^24.9.0",
     "prettier": "^2.0.5",
     "react": ">=16.4.1",

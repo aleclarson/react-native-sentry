@@ -1,0 +1,7 @@
+{
+  "repos": {
+    "ios/Sentry": {
+      "url": "git@github.com:aleclarson/sentry-cocoa.git"
+    }
+  }
+}
