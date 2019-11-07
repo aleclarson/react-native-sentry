@@ -39,7 +39,6 @@
     "@sentry/react": "^5.25.0",
     "@sentry/types": "^5.25.0",
     "@sentry/utils": "^5.25.0",
-    "@sentry/wizard": "^1.1.4",
     "promise": "^7.3.1"
   },
   "devDependencies": {
@@ -63,20 +62,6 @@
     "rimraf": "^3.0.0",
     "ts-jest": "^24.3.0",
     "typescript": "^3.4.5"
-  },
-  "rnpm": {
-    "commands": {
-      "postlink": "node node_modules/@sentry/wizard/dist/bin.js -i reactNative -p ios android",
-      "postunlink": "node node_modules/@sentry/wizard/dist/bin.js -i reactNative -p ios android --uninstall"
-    },
-    "android": {
-      "packageInstance": "new RNSentryPackage()"
-    },
-    "ios": {
-      "sharedLibraries": [
-        "libz"
-      ]
-    }
   },
   "jest": {
     "collectCoverage": true,
