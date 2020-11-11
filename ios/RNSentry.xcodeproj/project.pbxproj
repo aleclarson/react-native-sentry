@@ -8,21 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		274692BA21B4414400BF91A8 /* RNSentry.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNSentry.m */; };
-		274692BD21B4414400BF91A8 /* libSentryStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6387B8561ED8520D0045A84C /* libSentryStatic.a */; };
 		274692BF21B4414400BF91A8 /* RNSentry.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = B3E7B5881CC2AC0600A0062D /* RNSentry.h */; };
 		6350257B1E1E845F00408AE7 /* RNSentry.h in Copy Headers */ = {isa = PBXBuildFile; fileRef = B3E7B5881CC2AC0600A0062D /* RNSentry.h */; };
-		6387B8591ED8521B0045A84C /* libSentryStatic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6387B8561ED8520D0045A84C /* libSentryStatic.a */; };
+		70342F04255C588900969ADD /* Sentry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6387B84E1ED8520D0045A84C /* Sentry.framework */; };
 		B3E7B58A1CC2AC0600A0062D /* RNSentry.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNSentry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		274692B821B4414400BF91A8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6387B8441ED8520D0045A84C /* Sentry.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 6387B7C11ED84F910045A84C;
-			remoteInfo = SentryStatic;
-		};
 		6387B84D1ED8520D0045A84C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6387B8441ED8520D0045A84C /* Sentry.xcodeproj */;
@@ -36,20 +28,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 63AA76651EB8CB2F00D153DE;
 			remoteInfo = SentryTests;
-		};
-		6387B8551ED8520D0045A84C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6387B8441ED8520D0045A84C /* Sentry.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6387B7C21ED84F910045A84C;
-			remoteInfo = SentryStatic;
-		};
-		6387B8571ED852170045A84C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6387B8441ED8520D0045A84C /* Sentry.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 6387B7C11ED84F910045A84C;
-			remoteInfo = SentryStatic;
 		};
 		7021830B23747FC600CBF360 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -114,6 +92,13 @@
 			remoteGlobalIDString = 83CBBA2D1A601D0E00E9B192;
 			remoteInfo = React;
 		};
+		70342F10255C5A6E00969ADD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6387B8441ED8520D0045A84C /* Sentry.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 63AA759A1EB8AEF500D153DE;
+			remoteInfo = Sentry;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -156,7 +141,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				274692BD21B4414400BF91A8 /* libSentryStatic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6387B8591ED8521B0045A84C /* libSentryStatic.a in Frameworks */,
+				70342F04255C588900969ADD /* Sentry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +197,6 @@
 			children = (
 				6387B84E1ED8520D0045A84C /* Sentry.framework */,
 				6387B8501ED8520D0045A84C /* SentryTests.xctest */,
-				6387B8561ED8520D0045A84C /* libSentryStatic.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -247,7 +230,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				274692B721B4414400BF91A8 /* PBXTargetDependency */,
 			);
 			name = "RNSentry-tvOS";
 			productName = RCTDataManager;
@@ -265,8 +247,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				70342F11255C5A6E00969ADD /* PBXTargetDependency */,
 				702183282374801200CBF360 /* PBXTargetDependency */,
-				6387B8581ED852170045A84C /* PBXTargetDependency */,
 			);
 			name = RNSentry;
 			productName = RCTDataManager;
@@ -329,13 +311,6 @@
 			fileType = wrapper.cfbundle;
 			path = SentryTests.xctest;
 			remoteRef = 6387B84F1ED8520D0045A84C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6387B8561ED8520D0045A84C /* libSentryStatic.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSentryStatic.a;
-			remoteRef = 6387B8551ED8520D0045A84C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		7021830C23747FC600CBF360 /* libReact.a */ = {
@@ -416,20 +391,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		274692B721B4414400BF91A8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SentryStatic;
-			targetProxy = 274692B821B4414400BF91A8 /* PBXContainerItemProxy */;
-		};
-		6387B8581ED852170045A84C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SentryStatic;
-			targetProxy = 6387B8571ED852170045A84C /* PBXContainerItemProxy */;
-		};
 		702183282374801200CBF360 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = React;
 			targetProxy = 702183272374801200CBF360 /* PBXContainerItemProxy */;
+		};
+		70342F11255C5A6E00969ADD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Sentry;
+			targetProxy = 70342F10255C5A6E00969ADD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
